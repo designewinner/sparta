@@ -1,0 +1,28 @@
+for (let i = 0; i<a_list.length; i++){
+    console.log(i);
+    console.log(a_list[i]);
+}
+
+
+코드리스 랩
+
+카카오
+구글
+
+
+function get_num(w){
+    let num = 0
+    for (let a = 0; a < w; a++){
+        num = num + a;
+        console.log("a:" + a);
+        console.log("num:" + num);
+    }
+ return num
+
+}
+
+오픈API
+
+마스크 API
+
+슬랙 챗봇

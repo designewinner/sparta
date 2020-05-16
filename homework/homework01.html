@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주문하기</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Noto+Sans+KR:wght@100&display=swap"
+        rel="stylesheet">
+    <script>
+        function hey() {
+            alert('주문완료!');
+        }
+    </script>
+
+    <style>
+        * {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        .wrap {
+            width: 900px;
+            margin: 20px auto;
+            border: 1px solid lightgray;
+            padding: 30px;
+        }
+
+        .btn-primary {
+            width: 100%;
+        }
+
+        .img {
+            width: 990px;
+            background-size: cover;
+        }
+
+        .title {
+            font-size: 30px;
+            font-family: 'Gugi', cursive;
+        }
+
+        .price {
+            font-size: small;
+            margin-left: 25px;
+        }
+
+        .desc {
+            color: #6c757d
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="info">
+            <p class="img"><img src="https://www.kbmaeil.com/news/photo/201304/285012_725161_428.jpg" alt=""></p>
+
+            <p class="title">토끼간빵<span class="price">가격:1,000,000원 / 개</span></p>
+            <p class="desc">이 상품으로 말할 것 같으면 용왕이 찾지 못한 토끼의 간을 찾아 빨간망토의 늑대와 아기 돼지 삼형제의 숨결이 고루 녹아 있는 먹으면 120세까지 살 수 있다는
+                이 상품으로 말할 것 같으면 용왕이
+                찾지 못한 토끼의 간을 찾아 빨간망토의 늑대와 아기 돼지..</p>
+        </div>
+        <div class="">
+            <p class="title">주문하기</p>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">주문자 성함</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Name" aria-label="Username"
+                    aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">수량</label>
+                </div>
+                <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>-- 수량을 선택하세요 --</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">주소</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Address" aria-label="Username"
+                    aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">전화번호</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Phone number" aria-label="Username"
+                    aria-describedby="basic-addon1">
+            </div>
+
+            <button onclick="hey()" type="submit" class="btn btn-primary">주문하기</button>
+        </div>
+    </div>
+</body>
+
+</html>

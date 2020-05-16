@@ -1,0 +1,23 @@
+/* 구글웹폰트적용 */
+
+* {
+    font-family: 'Jua', sans-serif;
+}
+
+.wrap {
+    margin: 100px auto;
+    width: 500px;
+}
+
+.login_back {
+    text-align: center;
+    color: white;
+    background-image: url(https://www.ancient-origins.net/sites/default/files/field/image/Agesilaus-II-cover.jpg);
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
