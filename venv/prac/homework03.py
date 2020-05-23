@@ -19,9 +19,8 @@ for song in songs:
     a_tag = song.select_one('td.info > a')
     if a_tag is not None:
         rank += 1;
-        title = song.select_one('.title').text # img 태그의 alt 속성값을 가져오기
-        title = title.strip()
-        singer = song.select_one('.artist').text
+        title = song.select_one('.title').text.strip() # img 태그의 alt 속성값을 가져오기
+        singer = song.select_one('.artist').text.strip()
         print(rank,title,singer)
         doc = {
             'rank' : rank,
