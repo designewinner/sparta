@@ -1,0 +1,7 @@
+cmd
+
+cd 디렉토리
+
+cd bin
+
+mongod로 실행
